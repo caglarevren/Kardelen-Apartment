@@ -1,0 +1,24 @@
+/* Google Fonts (Montserrat and Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Montserrat Font */
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Poppins Font */
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ********** NAVBAR Inline Styles ********** */
+.nav-bg {
+  background-color: #161b22;
+  border-bottom: 2px solid #8b0000;
+}
+
+/* ********** SHOWCASE Inline Styles ********** */
+#showcase {
+  background-color: #06090f;
+  min-height: 600px;
+}
