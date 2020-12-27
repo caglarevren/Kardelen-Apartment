@@ -1,6 +1,7 @@
 /* Google Fonts (Montserrat and Poppins) */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* ********** General Styles ********** */
 /* Montserrat Font */
 .montserrat {
   font-family: 'Montserrat', sans-serif;
@@ -11,7 +12,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* ********** General Styles ********** */
 .white-bg {
   background-color: #e5e7eb;
 }
@@ -75,11 +75,10 @@
 }
 
 /* ********** SEPET ********** */
-
 .btn-purchase {
   display: block;
   margin: 40px auto 80px auto;
-  font-size: 1.75em;
+  font-size: 1.75rem;
 }
 .cart-column {
   display: flex;
@@ -124,7 +123,7 @@
   color: #333;
   padding: 0;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin-right: 25px;
 }
 

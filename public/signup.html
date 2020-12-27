@@ -3,7 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ========== Font Awesome Cdn ========== -->
+
+    <title>Gider Ödeme Sayfası | Kardelen Apartmanı</title>
+
+    <!-- ========== Linking Favicon ========== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+
+    <!-- ========== FontAwesome Cdn ========== -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -22,7 +44,6 @@
 
     <!-- ========== Main Js ========== -->
     <script src="./script.js" async></script>
-    <title>Kardelen Apartmanı | Apartmanımıza Hoşgeldiniz</title>
   </head>
   <body>
     <!-- ========== NAVBAR ========== -->
@@ -46,6 +67,13 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a
+                  href="./index.html"
+                  class="nav-link text-uppercase mr-4 text-light"
+                  >Anasayfa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
                   href="./signup.html"
                   class="nav-link text-uppercase mr-4 text-light"
                   ><i class="fas fa-user-plus mr-2"></i>Kayıt & Listeler</a
@@ -64,7 +92,7 @@
       </nav>
     </header>
 
-    <!-- Giderler -->
+    <!-- ========== GİDERLER ========== -->
     <section class="white-bg py-5 montserrat">
       <div class="container">
         <h2 class="text-center">
@@ -75,8 +103,9 @@
         </p>
         <div class="shop-items">
           <div class="shop-item mr-2">
+            <!-- Elektrik -->
             <span class="shop-item-title">Elektrik</span>
-            <img class="shop-item-image" src="./img/electricity.jpg" />
+            <img class="shop-item-image rounded" src="./img/electricity.jpg" />
             <div class="shop-item-details">
               <span class="shop-item-price font-weight-bold">75₺</span>
               <button class="btn btn-primary shop-item-button" type="button">
@@ -84,6 +113,8 @@
               </button>
             </div>
           </div>
+
+          <!-- Su -->
           <div class="shop-item mr-2">
             <span class="shop-item-title">Su</span>
             <img class="shop-item-image rounded" src="./img/water.jpg" />
@@ -94,9 +125,11 @@
               </button>
             </div>
           </div>
+
+          <!-- Temizlik -->
           <div class="shop-item">
             <span class="shop-item-title">Temizlik</span>
-            <img class="shop-item-image" src="./img/cleaning.jpg" />
+            <img class="shop-item-image rounded" src="./img/cleaning.jpg" />
             <div class="shop-item-details">
               <span class="shop-item-price font-weight-bold">100₺</span>
               <button class="btn btn-primary shop-item-button" type="button">
@@ -108,7 +141,7 @@
       </div>
     </section>
 
-    <!-- Sepet -->
+    <!-- ========== SEPET ========== -->
     <section class="container montserrat content-section">
       <h2 class="section-header text-center">
         <i class="fas fa-shopping-cart mr-2 mt-5"></i>SEPETİNİZ
@@ -124,22 +157,21 @@
         <strong class="cart-total-title">Total</strong>
         <span class="cart-total-price" id="total">0₺</span>
       </div>
-      <!-- Button -->
       <button class="btn btn-primary btn-purchase" type="button">
         Listeye Ekle
       </button>
     </section>
 
-    <!-- Listeler -->
-    <section>
-      <h2 class="text-center mb-3">LİSTELER</h2>
+    <!-- ========== LİSTELER ========== -->
+    <section class="poppins">
+      <h2 class="text-center mb-3"><i class="fas fa-list-ol mr-2"></i></i>LİSTELER</h2>
       <table class="table table-bordered container">
         <thead>
           <tr>
             <th scope="col">#</th>
             <th scope="col">Ad Soyad</th>
             <th scope="col">Tarih</th>
-            <th scope="col">Ödediği Tutar</th>
+            <th scope="col">Ödenen Tutar</th>
             <th scope="col">Not</th>
           </tr>
         </thead>
@@ -149,7 +181,7 @@
             <td>Ahmet Çakır</td>
             <td>2020-12-04</td>
             <td>150tl</td>
-            <td>Daire: 6</td>
+            <td>Daire 6</td>
           </tr>
           <tr>
             <th scope="row"></th>
@@ -162,6 +194,7 @@
       </table>
     </section>
 
+    <!-- ========== FOOTER ========== -->
     <footer class="text-center p-4 light-dark-bg text-light poppins">
       <div class="container">
         <div class="row">

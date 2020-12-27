@@ -1,9 +1,12 @@
+// Main Variables
 const cartInfo = document.querySelector('.cart-info');
 const totalEl = document.getElementById('total');
 const tbody = document.getElementById('tbody');
 
+// Initially Getting Data From Local Storage
 getFormLocalStorage();
 
+// DOM Content Loaded
 if (document.readyState == 'loading') {
   document.addEventListener('DOMContentLoaded', ready);
 } else {
@@ -11,18 +14,21 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
+  // Sepetten Gider Silme
   const removeCartItemButtons = document.getElementsByClassName('btn-danger');
   for (let i = 0; i < removeCartItemButtons.length; i++) {
     let button = removeCartItemButtons[i];
     button.addEventListener('click', removeCartItem);
   }
 
+  // Miktar Değiştirme
   let quantityInputs = document.getElementsByClassName('cart-quantity-input');
   for (let i = 0; i < quantityInputs.length; i++) {
-    var input = quantityInputs[i];
+    let input = quantityInputs[i];
     input.addEventListener('change', quantityChanged);
   }
 
+  // Sepete Ekleme
   let addToCartButtons = document.getElementsByClassName('shop-item-button');
   for (let i = 0; i < addToCartButtons.length; i++) {
     let button = addToCartButtons[i];
@@ -83,14 +89,14 @@ function getFormLocalStorage() {
   }
 }
 
-// Gider Silme
+// Gider Silme Function
 function removeCartItem(event) {
   const buttonClicked = event.target;
   buttonClicked.parentElement.parentElement.remove();
   updateCartTotal();
 }
 
-// Miktar Değiştirme
+// Miktar Değiştirme Function
 function quantityChanged(event) {
   const input = event.target;
   if (isNaN(input.value) || input.value <= 0) {
@@ -99,7 +105,7 @@ function quantityChanged(event) {
   updateCartTotal();
 }
 
-// Sepete Ekleme
+// Sepete Ekleme Function
 function addToCartClicked(event) {
   const button = event.target;
   const shopItem = button.parentElement.parentElement;
