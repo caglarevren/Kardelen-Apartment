@@ -1,8 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- ========== General Metadata ========== -->
+    <title>Kardelen Apartmanı | Apartmanımıza Hoşgeldiniz</title>
+
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="copyright" content="Çağlar Evren" />
+    <meta name="rating" content="General" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="creator" content="Çağlar Evren" />
+    <meta name="author" content="Çağlar Evren" />
+
+    <!-- ========== Metadata for S.E.O ========== -->
+    <meta
+      name="title"
+      content="Kardelen Apartmanı | Apartmanımıza Hoşgeldiniz"
+    />
+    <meta
+      name="description"
+      content="Merhaba Kardelen Apartmanına hoşgeldiniz."
+    />
+
+    <meta
+      itemprop="keywords"
+      content="Kardelen, Kardelen Apartmanı, Kardelen Apartmanı gider, Kardelen Apartmanı gider ödeme, Apartman gider ödeme, Kardelen ödeme"
+    />
+
+    <!-- ========== Linking Favicon ========== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+
     <!-- ========== Font Awesome Cdn ========== -->
     <link
       rel="stylesheet"
@@ -10,6 +54,7 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+
     <!-- ========== Bootstrap Css Cdn ========== -->
     <link
       rel="stylesheet"
@@ -17,55 +62,51 @@
     />
     <!-- ========== Main Css ========== -->
     <link rel="stylesheet" href="./style.css" />
-    <title>Kardelen Apartmanı | Apartmanımıza Hoşgeldiniz</title>
   </head>
   <body>
     <!-- ========== NAVBAR ========== -->
-    <nav
-      class="navbar navbar-expand-sm navbar-dark nav-bg fixed-top montserrat"
-    >
-      <div class="container-fluid">
-        <!-- Logo -->
-        <a href="index.html" class="navbar-brand"
-          ><img src="./img/apartment-logo.png" alt="logo"
-        /></a>
-        <!-- Nav Button -->
-        <button
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Nav Links -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link text-uppercase mr-4 text-light"
-                ><i class="fas fa-user-plus mr-2"></i>Kayıt Ol</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-uppercase mr-4 text-light"
-                ><i class="fas fa-list mr-2"></i>Lİsteler</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-uppercase text-light"
-                >İletişim</a
-              >
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark nav-bg montserrat">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a href="index.html" class="navbar-brand"
+            ><img src="./img/apartment-logo.png" alt="logo"
+          /></a>
+          <!-- Nav Button for Mobile -->
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Nav Links -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a
+                  href="./signup.html"
+                  class="nav-link text-uppercase mr-4 text-light"
+                  ><i class="fas fa-user-plus mr-2"></i>Kayıt & Listeler</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link text-uppercase text-light"
+                  ><i class="fas fa-phone-alt mr-2"></i>İletişim</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!-- ========== SHOWCASE ========== -->
     <section id="showcase" class="pt-5 poppins text-white">
       <div class="container">
         <div class="row">
-          <!-- Showcase Left -->
-          <div class="col-lg-6 text-center text-lg-left mt-5 mt-lg-4 mt-xl-5">
+          <!-- Showcase Left(Text) -->
+          <main class="col-lg-6 text-center text-lg-left mt-5 mt-lg-4 mt-xl-5">
             <h1 class="display-5 mt-5 pt-5">
               Kardelen Apartmanına hoşgeldiniz
             </h1>
@@ -73,14 +114,15 @@
               Giderlerimizi görebilmek için lütfen kayıt olunuz.
             </p>
             <a
-              href="#"
+              href="./signup.html"
+              target="_blank"
               class="btn btn-outline-secondary btn-lg text-white mt-2"
             >
               <i class="fas fa-arrow-right"></i> Kayıt Ol
             </a>
-          </div>
+          </main>
 
-          <!-- Showcase Right -->
+          <!-- Showcase Right(Image) -->
           <div class="col-lg-6">
             <img
               src="./img/hero-img-1.png"
@@ -91,6 +133,134 @@
         </div>
       </div>
     </section>
+
+    <!-- ========== INFO SECTION ========== -->
+    <section class="py-3 white-bg montserrat">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="./img/info-img.jpg"
+              alt=""
+              class="img-fluid img-thumbnail"
+            />
+          </div>
+          <div class="col-md-6 align-self-center text-center text-md-justify">
+            <h3>Hakkında</h3>
+            <p>
+              Apartmanımız 2005 yılında kurulmuştur. 128 dairemiz mevcuttur.
+              Antalya, konyaaltı bölgesindedir. Denize yürüme mesafesindedir.
+            </p>
+            <button class="btn btn-outline-danger btn-lg">
+              Daha fazlası için
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="py-3 dark-bg montserrat">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card p-4">
+              <div class="card-body">
+                <h4>İletişim için</h4>
+                <p>
+                  Yöneticimiz ile iletişim için aşağıdaki bilgileri
+                  kullanabilirsiniz.
+                </p>
+                <h4>Adres</h4>
+                <p>Konyaaltı caddesi,liman mahallesi</p>
+                <h4>Email</h4>
+                <p>caglarevren93@gmail.com</p>
+                <h4>Telefon</h4>
+                <p>(538) 449-5157</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 mt-3 mt-md-0">
+            <div class="card p-4">
+              <div class="card-body">
+                <h3 class="text-center">
+                  Lütfen bizimle iletişime geçmek için bu formu doldurunuz.
+                </h3>
+                <hr />
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Ad"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Soyad"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Telefon"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        placeholder="Mesajınız..."
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="submit"
+                        value="Gönder"
+                        class="btn btn-outline-danger btn-block"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer class="text-center p-4 light-dark-bg text-light poppins">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; <span>2020</span> Kardelen Apartmanı</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- ========== Bootstrap Js Cdn ========== -->
     <script

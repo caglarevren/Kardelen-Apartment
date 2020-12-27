@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ========== Font Awesome Cdn ========== -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <!-- ========== Bootstrap Css Cdn ========== -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- ========== Main Css ========== -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- ========== Main Js ========== -->
+    <script src="./script.js" async></script>
+    <title>Kardelen Apartmanı | Apartmanımıza Hoşgeldiniz</title>
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark nav-bg montserrat">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a href="index.html" class="navbar-brand"
+            ><img src="./img/apartment-logo.png" alt="logo"
+          /></a>
+          <!-- Nav Button for Mobile -->
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Nav Links -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a
+                  href="./signup.html"
+                  class="nav-link text-uppercase mr-4 text-light"
+                  ><i class="fas fa-user-plus mr-2"></i>Kayıt & Listeler</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="./index.html#contact"
+                  class="nav-link text-uppercase text-light"
+                  ><i class="fas fa-phone-alt mr-2"></i>İletişim</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Giderler -->
+    <section class="white-bg py-5 montserrat">
+      <div class="container">
+        <h2 class="text-center">
+          Merhaba Kardelen Apartmanı Gider Ödeme Sayfasına Hoşgeldiniz
+        </h2>
+        <p class="lead text-center font-weight">
+          Lütfen ödemek istediğiniz giderleri sepete ekleyiniz.
+        </p>
+        <div class="shop-items">
+          <div class="shop-item mr-2">
+            <span class="shop-item-title">Elektrik</span>
+            <img class="shop-item-image" src="./img/electricity.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price font-weight-bold">75₺</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                Sepete Ekle
+              </button>
+            </div>
+          </div>
+          <div class="shop-item mr-2">
+            <span class="shop-item-title">Su</span>
+            <img class="shop-item-image rounded" src="./img/water.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price font-weight-bold">50₺</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                Sepete Ekle
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Temizlik</span>
+            <img class="shop-item-image" src="./img/cleaning.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price font-weight-bold">100₺</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                Sepete Ekle
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sepet -->
+    <section class="container montserrat content-section">
+      <h2 class="section-header text-center">
+        <i class="fas fa-shopping-cart mr-2 mt-5"></i>SEPETİNİZ
+      </h2>
+      <div class="cart-row">
+        <span class="cart-item font-weight-bold cart-column">GİDERLER</span>
+        <span class="cart-price font-weight-bold cart-column">FİYAT</span>
+        <span class="cart-quantity font-weight-bold cart-column">MİKTAR</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-info"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price" id="total">0₺</span>
+      </div>
+      <!-- Button -->
+      <button class="btn btn-primary btn-purchase" type="button">
+        Listeye Ekle
+      </button>
+    </section>
+
+    <!-- Listeler -->
+    <section>
+      <h2 class="text-center mb-3">LİSTELER</h2>
+      <table class="table table-bordered container">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Ad Soyad</th>
+            <th scope="col">Tarih</th>
+            <th scope="col">Ödediği Tutar</th>
+            <th scope="col">Not</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr>
+            <th scope="row"></th>
+            <td>Ahmet Çakır</td>
+            <td>2020-12-04</td>
+            <td>150tl</td>
+            <td>Daire: 6</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>Ayşe Tekin</td>
+            <td>2020-08-17</td>
+            <td>200tl</td>
+            <td>Daire 21</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="text-center p-4 light-dark-bg text-light poppins">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; <span>2020</span> Kardelen Apartmanı</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========== Bootstrap Js Cdn ========== -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
